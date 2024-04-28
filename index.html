@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>UNT Health Center</title>
+  <style>
+    /* Global styles */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background-color: #008000; /* Green background */
+    }
+    /* Header styles */
+    .header {
+      display: flex;
+      justify-content: space-between;
+      padding: 20px;
+      background-color: #008000; /* Green background */
+      color: #ffffff;
+    }
+    .header a {
+      text-decoration: none;
+      color: #ffffff;
+      padding: 10px;
+    }
+    .header a:hover {
+      background-color: #006400;
+    }
+    /* Doctor profiles styles */
+    .doctor {
+      margin-bottom: 20px;
+      padding: 20px;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+    }
+    .doctor h3 {
+      margin-bottom: 10px;
+    }
+    .doctor p {
+      line-height: 1.5;
+    }
+    /* Contact form styles */
+    .form-container {
+      padding: 20px;
+    }
+    .form {
+      display: flex;
+      flex-direction: column;
+      max-width: 400px;
+      margin: 0 auto;
+    }
+    .form label {
+      margin-bottom: 5px;
+    }
+    .form input, .form textarea {
+      padding: 10px;
+      margin-bottom: 15px;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+    }
+    .form button {
+      background-color: #008000; /* Green background */
+      color: #ffffff;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    /* Footer styles */
+    .footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #008000; /* Green background */
+      color: #ffffff;
+    }
+  </style>
+</head>
+<body>
+  <header class="header">
+    <h1>UNT Health Center</h1>
+    <nav>
+      <a href="#">Doctors</a>
+      <a href="#">Departments</a>
+      <a href="#">Contact</a>
+      <a href="#">Sign In</a>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <h2>Our Renowned Doctors</h2>
+      <div class="doctor">
+        <h3>Dr. Joseph Livingston</h3>
+        <p>Cardiologist with over 20 years of experience specializing in heart disease diagnosis and treatment. Dr. Livingston is known for his compassionate approach and commitment to patient care.</p>
+      </div>
+      <div class="doctor">
+        <h3>Dr. Jane Smith</h3>
+        <p>Gynecologist with a focus on women's health across all stages of life. Dr. Smith is a trusted provider for routine checkups, pregnancy care, and complex gynecological issues.</p>
+      </div>
+      <div class="doctor">
+        <h3>Diana Joseph</h3>
+        <p>Orthodontist with expertise in creating beautiful and healthy smiles. Diana utilizes cutting-edge technology to provide a variety of orthodontic treatment options for children and adults.</p>
+      </div>
+    </section>
+
+    <section class="form-container">
+      <h2>Contact Us</h2>
+      <form class="form" action="/submit-form" method="post">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" required></textarea>
+
+        <button type="submit">Submit</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="footer">
+    &copy; 2024 UNT Health Center. All rights reserved.
+  </footer>
+</body>
+</html>
